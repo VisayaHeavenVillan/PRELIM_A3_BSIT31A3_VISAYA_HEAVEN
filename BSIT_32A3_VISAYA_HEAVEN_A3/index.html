@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CV</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+    <!-- Header & Navbar -->
+    <header class="bg-primary text-white text-center p-3">
+        <h1>My CV</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="#">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+<!-- Home Section -->
+<section id="home" class="container text-center my-5">
+    <h2>HEAVEN VILLAN VISAYA</h2>
+    
+    <!-- Profile Image -->
+    <img src="images/heaven-visaya.jpg" alt="Heaven Visaya" class="rounded-circle img-fluid my-3" width="200">
+    
+    <p>Hi, I'm <strong>Heaven Visaya</strong>. I am a 3rd-year irregular BSIT student at Lyceum of Alabang, passionate about computer hardware, gaming, and traveling. I have experience in assembling, troubleshooting, and maintaining PCs, along with strong negotiation skills and adaptability in learning new technologies.
+
+        I enjoy exploring the latest trends in PC building and hardware optimization, and I love discussing tech-related topics. Aside from computers, I have a deep interest in traveling to new places and immersing myself in different cultures. Gaming is also a big part of my life, whether it's for fun, competition, or exploring new game technologies.
+        
+        My goal is to continue expanding my IT knowledge, particularly in hardware, networking, and system management, while also exploring opportunities in the tech industry. I am always eager to learn, adapt, and grow in this ever-evolving field.
+    </p>
+
+    <button class="btn btn-primary" onclick="showHobbies()">Show My Hobbies</button>
+</section>
+
+<!-- Personal Information -->
+<section id="personal-info" class="container my-5">
+    <h2>Personal Information</h2>
+    <p><strong>Age:</strong> 21</p>
+    <p><strong>Sex:</strong> Male</p>
+    <p><strong>Email:</strong> <a href="mailto:your.email@example.com"> visayaheaven@gmail.com</a></p>
+    <p><strong>Phone:</strong> <a href="tel:+639123456789"> +63 912 345 6789</a></p>
+</section>
+
+<!-- About Section -->
+<section id="about" class="container my-5">
+    <h2>About Me</h2>
+    <h4>Education</h4>
+    <p>Currently studying at Lyceum of Alabang.</p>
+    
+    <h4>School Activities</h4>
+    <ul>
+        <li>Esports</li>
+    </ul>
+
+    <h4>School Achievements</h4>
+    <ul>
+        <li>Dean's Lister 1st year (1st & 2nd Semester)</li>
+        <li>NSTP Certification</li>
+    </ul>
+    
+
+    <h4>Skills</h4>
+    <ul>
+        <li>Computer hardware knowledge</li>
+        <li>Negotiation</li>
+        <li>Troubleshooting & Maintenance</li>
+        <li>Assembling a Basic PC</li>
+        <li>Adaptability & willingness to learn</li>
+    </ul>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="container my-5">
+    <h2>Contact Me</h2>
+    <form onsubmit="return validateForm(event)">
+
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email">
+        </div>
+        <div class="mb-3">
+            <label for="subject" class="form-label">Subject</label>
+            <input type="text" class="form-control" id="subject">
+        </div>
+        <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+    </form>
+</section>
+
+    <br>
+    <br>
+    <br>
+
+<!-- Footer -->
+<footer class="bg-primary text-white text-center p-3">
+    <p>© 2025 My CV | <a href="#home" class="text-white">Back to Top</a></p>
+</footer>
+
+
+    <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

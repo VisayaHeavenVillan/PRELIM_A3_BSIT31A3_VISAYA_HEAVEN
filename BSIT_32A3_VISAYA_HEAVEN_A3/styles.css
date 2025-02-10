@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    color: #007bff;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.rounded-circle {
+    border-radius: 50%;
+}
+
+/* Increase font size for headings and paragraphs */
+h1 {
+    font-size: 2.5rem; /* Bigger main title */
+}
+
+h2 {
+    font-size: 2rem; /* Section titles */
+}
+
+p {
+    font-size: 1.2rem; /* Paragraphs */
+}
+
+/* Increase font size for navigation links */
+.navbar-nav .nav-link {
+    font-size: 1.2rem;
+}
+
+/* Increase button text size */
+.btn {
+    font-size: 1.1rem;
+}
+
+/* Adjust list items for better readability */
+ul {
+    font-size: 1.2rem;
+}
