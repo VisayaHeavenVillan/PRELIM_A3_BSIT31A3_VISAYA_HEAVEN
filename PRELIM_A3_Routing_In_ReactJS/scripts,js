@@ -1,0 +1,43 @@
+document.addEventListener("DOMContentLoaded", function () {
+    console.log("Lyceum Website Enhanced");
+    
+    // Smooth Scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute("href")).scrollIntoView({
+                behavior: "smooth"
+            });
+        });
+    });
+
+    // Highlight active navbar links
+    const navLinks = document.querySelectorAll(".nav-link");
+    navLinks.forEach(link => {
+        link.addEventListener("click", function () {
+            navLinks.forEach(nav => nav.classList.remove("active"));
+            this.classList.add("active");
+        });
+    });
+
+    // Bootstrap Modal Example
+    const modalTrigger = document.getElementById("modalTrigger");
+    if (modalTrigger) {
+        modalTrigger.addEventListener("click", function () {
+            let myModal = new bootstrap.Modal(document.getElementById("exampleModal"));
+            myModal.show();
+        });
+    }
+
+    // Form Validation
+    const form = document.querySelector("#contactForm");
+    if (form) {
+        form.addEventListener("submit", function (event) {
+            if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+            form.classList.add("was-validated");
+        });
+    }
+});
